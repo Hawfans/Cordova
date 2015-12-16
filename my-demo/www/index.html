@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grocery List</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="themes/Grocery.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="main.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+<!-- Start of Grocery Page -->
+<div data-role="page" id="home">
+
+	<div data-role="header">
+		<h1>Forget Less List</h1>
+		<img src="img/header.jpg" width="100%">
+	</div>
+
+	<div data-role="main" class="ui-content">
+
+		<p>It's simple, all you need to do is add anything that you think you will need in the text box. Then tap the add button to put it on your list.</p>
+
+		<h3>Click once to set as done, tap and hold to delete from list.</h3>
+
+	</div>
+
+	<div data-role="fieldcontain" class="ui-hide-label">
+		<p>Your List Starts Here:</p>
+		<input type="text" name="list" id="grocery" value="" placeholder="add something!"/>
+
+		<!-- <preference name="KeyboardDisplayRequiresUserAction" value="false" />-->
+
+		<input type="submit" id="add" value="Add" data-mini="true" data-icon="plus" data-iconpos="top" />
+	</div>
+			<div data-role="main" class="ui-content">
+			<h2>The List</h2>
+				<ul class="food">
+				</ul>
+					<input type="reset" id="clear" value="Reset List" />
+			</div>	
+	<div data-role="footer" data-position="fixed">
+		
+	</div><!-- /footer -->
+
+</div><!-- /page -->
+
+</body>
+</html>
